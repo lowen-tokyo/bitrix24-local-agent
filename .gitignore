@@ -1,0 +1,7 @@
+# Local data and generated files must stay out of the repository.
+.env
+.env.*
+*.log
+*.dpapi
+node_modules/
+dist/

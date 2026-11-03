@@ -1,0 +1,20 @@
+{
+  "name": "bitrix24-local",
+  "interface": {
+    "displayName": "Bitrix24 Local"
+  },
+  "plugins": [
+    {
+      "name": "bitrix24-local-agent",
+      "source": {
+        "source": "local",
+        "path": "./plugins/bitrix24-local-agent"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
