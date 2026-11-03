@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "bitrix24-local-agent",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Универсальный локальный агент для работы с порталами и проектами Bitrix24 через браузер"
 }
