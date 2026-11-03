@@ -1,4 +1,8 @@
 $ErrorActionPreference = 'Stop'
+$previousGitPrompt = $env:GIT_TERMINAL_PROMPT
+$previousGcmInteractive = $env:GCM_INTERACTIVE
+$env:GIT_TERMINAL_PROMPT = '0'
+$env:GCM_INTERACTIVE = 'never'
 
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $logDirectory = Join-Path $env:LOCALAPPDATA 'Bitrix24LocalAgent'
@@ -61,4 +65,6 @@ try {
     exit 1
 } finally {
     Pop-Location
+    $env:GIT_TERMINAL_PROMPT = $previousGitPrompt
+    $env:GCM_INTERACTIVE = $previousGcmInteractive
 }
